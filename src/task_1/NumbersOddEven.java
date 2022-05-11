@@ -9,4 +9,15 @@ identify(5)
 identify(6)
 6)-->"
      */
+
+    public static String oddMethod(int num){
+        if(num % 2 ==0){
+            return "Even number";
+        }else{
+            return "Odd number";
+        }
+    }
+
+
+
 }
