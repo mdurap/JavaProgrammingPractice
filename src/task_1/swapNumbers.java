@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class swapNumbers {
 
+    //Swap two variable' values without using a third variable
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter two numbers");
