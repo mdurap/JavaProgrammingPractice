@@ -7,7 +7,7 @@ public class FrequencyOfCharacters {
      */
 
     public static void main(String[] args) {
-        frequencyMeth("AAABBCDD");
+        System.out.println(frequencyMeth("AAABBCDD"));
 
 
     }
