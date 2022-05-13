@@ -6,12 +6,23 @@ public class FrequencyOfCharacters {
     Ex: FrequencyOfChars ("AAABBCDD") ==> A3B2C1D2
      */
 
-    public static String frequencyMeth(String str){
+    public static void main(String[] args) {
+        String str = "AAABBCDD";
+        String checked="";
         for (int i = 0; i < str.length(); i++) {
-            int counter = 0;
-
+            int count =0;
+            if(checked.contains(""+str.charAt(i))){
+                continue;
+            }
+            for (int j = 0; j < str.length(); j++) {
+                if(str.charAt(i)==str.charAt(j)){
+                    count++;
+                }
+            }
+            checked+=str.charAt(i)+""+count;
         }
-        return str;
+        System.out.println(checked);
+
     }
 
 }
