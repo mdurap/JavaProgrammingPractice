@@ -7,7 +7,13 @@ public class FrequencyOfCharacters {
      */
 
     public static void main(String[] args) {
-        String str = "AAABBCDD";
+        frequencyMeth("AAABBCDD");
+
+
+    }
+
+    private static String frequencyMeth(String str) {
+        //String str = "AAABBCDD";
         String checked="";
         for (int i = 0; i < str.length(); i++) {
             int count =0;
@@ -21,8 +27,7 @@ public class FrequencyOfCharacters {
             }
             checked+=str.charAt(i)+""+count;
         }
-        System.out.println(checked);
-
+       return checked;
     }
 
 }
