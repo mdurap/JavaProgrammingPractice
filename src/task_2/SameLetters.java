@@ -1,5 +1,7 @@
 package task_2;
 
+import java.util.Scanner;
+
 public class SameLetters {
     /*
      String Same letters: Write a return method that check if a string is build out of the same letters as another string.
@@ -8,6 +10,15 @@ public class SameLetters {
         same("abc",","abb"); --> false
      */
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter 2 String");
+        String str= input.next();
+        String s= input.next();
+
+        System.out.println(isSameLetter(str,s));
+
+        System.out.println("===============");
+
         System.out.println(isSameLetter("abc", "abb"));
 
     }
