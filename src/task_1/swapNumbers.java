@@ -12,9 +12,9 @@ public class swapNumbers {
         int num1= input.nextInt();
         int num2= input.nextInt();
 
-        num1= num1+num2;
-        num2= num1-num2;
-        num1= num1-num2;
+        num1= num1+num2;//15+17
+        num2= num1-num2;//15+17-17
+        num1= num1-num2;//15+17-15
 
         System.out.println("num1 = " + num1);
         System.out.println("num2 = " + num2);
