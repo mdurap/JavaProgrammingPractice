@@ -8,7 +8,7 @@ public class DivideWithoutOperator {
         Write a method that can divide two numbers without using division operator (/)
      */
     public static void main(String[] args) {
-        int number=37;
+        int number=27;
         int num1=12;// 37/12 = result
         int num2 = 0;
         int num=0;
@@ -29,8 +29,8 @@ public class DivideWithoutOperator {
 
         System.out.println("Result is "+list.get(num2));
 
-//        System.out.println(list);
-//        System.out.println(list.size());
+        System.out.println(list);
+        System.out.println(list.size());
 
     }
 
