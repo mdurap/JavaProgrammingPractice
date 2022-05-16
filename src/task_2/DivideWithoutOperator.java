@@ -8,8 +8,8 @@ public class DivideWithoutOperator {
         Write a method that can divide two numbers without using division operator (/)
      */
     public static void main(String[] args) {
-        int number=35;
-        int num1=12;// 35/12 = result
+        int number=37;
+        int num1=12;// 37/12 = result
         int num2 = 0;
         int num=0;
         if(number>num1){
