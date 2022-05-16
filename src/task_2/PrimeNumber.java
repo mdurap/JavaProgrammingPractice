@@ -30,6 +30,7 @@ public class PrimeNumber {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter number");
         primeNum(input.nextInt());
+
     }
 
 }
