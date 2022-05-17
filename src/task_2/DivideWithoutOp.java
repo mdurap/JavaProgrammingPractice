@@ -7,9 +7,13 @@ public class DivideWithoutOp {
       */
     public static void main(String[] args) {
         int num1 = 36;
-        int num2 = 3;
+        int num2 = 12;
         int result=0;
 
+        if(num2==0){
+            System.out.println("invalid input");
+
+        }
         while (num1>=num2){
             num1 = num1-num2;
             result++;
