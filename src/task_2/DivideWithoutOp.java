@@ -11,20 +11,18 @@ public class DivideWithoutOp {
         System.out.println("Enter 2 numbers");
         int num1 = new Scanner(System.in).nextInt();
         int num2 = new Scanner(System.in).nextInt();
-        divideOperator(num1,num2);
+        System.out.println(divideOperator(num1, num2));
     }
 
     private static int divideOperator(int num1, int num2) {
 
         int result=0;
 
-
+        if(num2==0){
+            System.out.println("invalid input");
+        }
 
         while (num1>=num2){
-            if(num2==0){
-                System.out.println("invalid input");
-                break;
-            }
             num1 = num1-num2;
             result++;
         }
