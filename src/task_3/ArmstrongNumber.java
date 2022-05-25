@@ -25,7 +25,7 @@ public class ArmstrongNumber {
 
             number = number / 10;
 
-            totalDigits += lastDigit * lastDigit * lastDigit;
+            totalDigits += lastDigit * lastDigit * lastDigit;//3 digit, if 4 digit one more *lastDigit
            // totalDigits+=Math.pow(lastDigit,3);
 
         }
