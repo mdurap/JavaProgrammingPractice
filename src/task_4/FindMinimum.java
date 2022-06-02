@@ -6,7 +6,7 @@ public class FindMinimum {
     Write a method that can find the maximum number from an int Array
      */
     public static void main(String[] args) {
-        int [] arr = {1,3,8,-5,34,76,23};
+        int [] arr = {1,3,2,-5,-13,67,32};
         int min=Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
             if(arr[i]< min){
