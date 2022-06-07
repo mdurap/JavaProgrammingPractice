@@ -10,13 +10,19 @@ public class ArraySortAscending {
      */
     public static void main(String[] args) {
         int [] arr = {10,9,8,7};
+
+//        Arrays.sort(arr);
+//        System.out.println(Arrays.toString(arr));
+//        System.out.println("================================");
+
+
         int temp=0;
         for (int i = 0; i < arr.length-1; i++) {
             for (int j = 0; j < arr.length-1; j++) {
-                if(arr[j]>arr[j+1]){
-                    temp = arr[j+1];
-                    arr[j+1] = arr[j];
-                    arr[j] = temp;
+                if(arr[j]>arr[j+1]){  // 10>9   {10,9,8,7};  {9,10,8,7};
+                    temp = arr[j+1];  // temp = 9-8
+                    arr[j+1] = arr[j];  //{10,10,8,7};    {9,10,10,7};
+                    arr[j] = temp;     //{9,10,8,7};       {9,8,10,7};
                 }
 
             }
