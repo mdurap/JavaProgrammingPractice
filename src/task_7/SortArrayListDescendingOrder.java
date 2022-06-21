@@ -1,21 +1,25 @@
 package task_7;
 
-import task_5.ArraySortDescending;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class SortArrayListDescendingOrder {
     //write a method that can sort the arraylist in descending order
     public static void main(String[] args) {
 
-    ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
+        list.addAll(Arrays.asList(2,3,5,8,11,1,7,-4));
 
-    list.addAll(Arrays.asList(2,3,5,8,11,1,7,4));
+        System.out.println("DescendingOrder(list) = " + DescendingOrder(list));
+
+    }
+
+    public static ArrayList<Integer> DescendingOrder(ArrayList<Integer> list) {
+
 //        Collections.sort(list);
 //        Collections.reverse(list);
 //        System.out.println(list);
+
         int temp=0;
         for (int i = 0; i < list.size()-1; i++) {
             for (int j = 0; j < list.size()-1; j++) {
@@ -29,6 +33,6 @@ public class SortArrayListDescendingOrder {
             }
 
         }
-        System.out.println(list);
+        return list;
     }
 }
