@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class SortArrayListAscendingOrder {
 
-    //write a method that can sort the arraylist in descending order
+    //write a method that can sort the arraylist in Ascending order
     public static void main(String[] args) {
 
         ArrayList<Integer> list = new ArrayList<>();
@@ -28,5 +28,21 @@ public class SortArrayListAscendingOrder {
         }
         System.out.println(list);
     }
+
+    /*
+    ArrayList<Integer> list = new ArrayList<>(Arrays.asList(2, 5, 7 ,0, -4, 6, 1));
+        for (int i = 0 ; i < list.size() ; i++) {
+            for (int j = i+1; j < list.size() ; j++) {
+                if (list.get(j) < list.get(i)) {
+                    Collections.swap(list, j, i);
+                }
+            }
+        }
+        System.out.println(list);
+    }
+     */
+
+
+
 
 }
