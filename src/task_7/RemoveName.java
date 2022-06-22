@@ -8,12 +8,12 @@ public class RemoveName {
 
     public static ArrayList<String> removeDuplicates(ArrayList<String> names){
 
-        names.removeIf(name -> Collections.frequency(names, name) > 1);
-        //names.removeIf(name -> name.equals("David"));
+        //names.removeIf(name -> Collections.frequency(names, name) > 1);
+        names.removeIf(name -> name.equals("David"));
         return names;
     }
     public static void main(String[] args) {
-        ArrayList<String> names = new ArrayList<>(Arrays.asList("David","John","Eric","David","John"));
+        ArrayList<String> names = new ArrayList<>(Arrays.asList("David","John","Eric","David"));
         System.out.println(removeDuplicates(names));
     }
 
