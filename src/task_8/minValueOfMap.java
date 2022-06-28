@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class minValueOfMap {
 
-    // write a method that can return the minimum value from a map()
+    // write a method that can return the minimum value from a map(Don't use sort method)
 
     public static void main(String[] args) {
 
